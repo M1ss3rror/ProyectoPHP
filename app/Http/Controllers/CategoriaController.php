@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Pelicula;
 
 use App\Categoria;
 use Illuminate\Http\Request;
@@ -80,4 +81,9 @@ class CategoriaController extends Controller
             $categoria->save();
             echo "Cambios Guardados";
         }
+}
+
+class PeliculaController extends Controller{
+    //acción para mostrar el catálogo de 'peliculas
+    
 }

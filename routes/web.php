@@ -1,6 +1,7 @@
 <?php
 
 use App\Categoria;
+use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -104,3 +105,7 @@ Route::get('categorias/create', "CategoriaController@create");
 Route::post('categorias/store', "CategoriaController@store");
 Route::get('categorias/edit/{idcategoria}', "CategoriaController@edit");
 Route::post('categorias/update',"CategoriaController@update");
+Route::get('peliculas', 'PeliculaController@index');
+
+Route::get('Clientes/jsoncities/{id_pais}', 'LocationController@jsoncities');
+Route::get('Clientes/create', 'ClienteController@create');
